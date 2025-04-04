@@ -1,0 +1,11 @@
+import platform
+import sys
+
+def get_windows_version():
+    version = platform.platform()
+    if "Windows" in version:
+        print(f"Windows Version: {version}")
+    else:
+        print("Not running on Windows")
+
+get_windows_version()
