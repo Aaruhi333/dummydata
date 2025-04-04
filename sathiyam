@@ -1,0 +1,15 @@
+import os
+import platform
+
+def check_windows_version():
+    if os.name == 'nt':
+        system = platform.system()
+        release = platform.release()
+        version = platform.version()
+        print(f"Operating System: {system}")
+        print(f"Windows Release: {release}")
+        print(f"Detailed Version: {version}")
+    else:
+        print("Not a Windows system")
+
+check_windows_version()
